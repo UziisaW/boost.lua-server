@@ -1,15 +1,14 @@
--- boost.lua loader
--- Paste this into your executor. The token never touches this file.
+-- hi, im 6raveyard and ur looking at the loader.lua!
 
-local SERVER_URL = "https://YOUR-RAILWAY-APP.up.railway.app/script"
-local SERVER_KEY = "YOUR_SERVER_KEY"   -- remove this line if you left SERVER_KEY blank in Railway
+local SERVER_URL = "https://web-production-66781.up.railway.app"
+local SERVER_KEY = "boost.luaishotbro"
 
 local ok, res = pcall(function()
     return (syn and syn.request or http and http.request or request)({
         Url     = SERVER_URL,
         Method  = "GET",
         Headers = {
-            ["X-Key"] = SERVER_KEY,   -- remove this line if no SERVER_KEY
+            ["X-Key"] = SERVER_KEY,
         },
     })
 end)
